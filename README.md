@@ -10,18 +10,39 @@ pip install -r requirements.txt
 ```
 
 ### API Access Token for Production
-You can install the auth0 Python SDK using the following command.
+To retrive the token, you first need to register a Machine-To-Machine application and edit replace these values to your application.
+```python
+  domain = '<domain>'
+  audience = f'https://{domain}/api/v2/'
+  client_id = '<client_id>'
+  client_secret = '<client_secret>'
+  grant_type = "client_credentials" # OAuth 2.0 flow to use
 ```
-pip install -r requirements.txt
-```
+
+### Methods in this script
+This Python script contains 3 functions which uses the Management API Token and calls the Management Endpoint API. To retrieve the query, enter 1-3 in user-input for the function to run.
 
 
-Function 1
+#### 1. Query all Applications
+Calls a GET on url/api/v2/clients
+Returns a list of Applications in your Tenant.
 
 
 
-Function 2
+#### 2. Query Actions bound by Apps
+Calls a GET on url/api/v2/actions/actions
+Returns a Dictionary of Actions key and list of Apps value.
+'ActionName': ['App1','App2']
+
+Actions that are not bounded to any application will have the value 'Action is not bounded to any Client'
+
+The Function filters based on this naming convention as listed here:
+For example: The "Allow access only on weedays for a specific application" sample Action here: 
+https://auth0.com/docs/manage-users/access-control/sample-use-cases-actions-with-authorization
 
 
+#### 3. Query Actions bound by Trigger
+Calls a GET on url/api/v2/actions/actions
+Returns a Dictionary of Actions key and String value of Trigger Binding.
+'ActionName': 'post-login'
 
-Function 3 
