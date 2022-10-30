@@ -50,3 +50,11 @@ Returns a Dictionary of Actions key and String value of Trigger Binding.
 ### Sample Outputs
 When script is started, user will be prompted to input a value (1-3).<img width="677" alt="menu" src="https://user-images.githubusercontent.com/39029549/198880599-012615e9-eff7-4717-a64e-e790a6783584.png">
 
+When '1' is chosen:
+<img width="1058" alt="output1" src="https://user-images.githubusercontent.com/39029549/198880710-3add8d2d-02ce-4027-8be2-9e334e0bf3f7.png">
+
+When '2' is chosen:
+<img width="1063" alt="output2" src="https://user-images.githubusercontent.com/39029549/198880754-6de005de-24bc-4151-941d-5aabcdd9a2a5.png">
+
+When '3' is chosen:
+<img width="1067" alt="output3" src="https://user-images.githubusercontent.com/39029549/198880746-c483d3bc-9c05-4ba8-b9b8-8912941b737e.png">
