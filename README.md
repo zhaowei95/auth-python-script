@@ -60,6 +60,7 @@ When '3' is chosen:
 <img width="1067" alt="output3" src="https://user-images.githubusercontent.com/39029549/198880746-c483d3bc-9c05-4ba8-b9b8-8912941b737e.png">
 
 ### Sample Test Cases for retrieving Actions bound by App
+Multiple reference to event.client.name
 ```
 exports.onExecutePostLogin = async (event, api) => {
   if (event.client.name === "Default App" || event.client.name === "JS-App" || event.client.name === "App3") {
@@ -71,7 +72,7 @@ exports.onExecutePostLogin = async (event, api) => {
   }
 }
 ```
-
+Multiple reference to event.client.name and event.client.id
 ```
 exports.onExecutePostLogin = async (event, api) => {
   if (event.client.name === "API Explorer Application" || event.client.id === "ADdX3maj6JowxLyIfWqLBq5q8jkot7cC") {
