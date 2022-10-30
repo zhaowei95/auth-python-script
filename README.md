@@ -46,3 +46,7 @@ Calls a GET on url/api/v2/actions/actions
 Returns a Dictionary of Actions key and String value of Trigger Binding.
 'ActionName': 'post-login'
 
+
+### Sample Outputs
+When script is started, user will be prompted to input a value (1-3).<img width="677" alt="menu" src="https://user-images.githubusercontent.com/39029549/198880599-012615e9-eff7-4717-a64e-e790a6783584.png">
+
