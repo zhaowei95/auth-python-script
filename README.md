@@ -10,7 +10,7 @@ pip install -r requirements.txt
 ```
 
 ### API Access Token for Production
-To retrive the token, you first need to register a Machine-To-Machine application and edit replace these values to your application.
+To retrive the token, you first need to register a Machine-To-Machine application and replace these values based on your application.
 ```python
   domain = '<domain>'
   audience = f'https://{domain}/api/v2/'
