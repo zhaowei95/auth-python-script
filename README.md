@@ -86,3 +86,12 @@ exports.onExecutePostLogin = async (event, api) => {
   }
 }
 ```
+No reference to event.client.name or event.client.id which the script will return 'Action is not bounded to any Client'
+```
+exports.onExecutePostLogin = async (event, api) => {
+  if (d === 0 || d === 6) {
+      api.access.deny("This app is only available during the week.");
+    } 
+}
+
+```
