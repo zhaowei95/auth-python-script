@@ -4,10 +4,10 @@ from requests.exceptions import RequestException, HTTPError, URLRequired
 def main():
 
   # Configuration Values
-  domain = '<domain>'
+  domain = 'dev-egu1zx4ujizi6zz8.us.auth0.com'
   audience = f'https://{domain}/api/v2/'
-  client_id = '<client_id>'
-  client_secret = '<client_secret>'
+  client_id = 'dzDQhEm045PO4JpUDFO6CDcASYFJWpSu'
+  client_secret = 'Y9jnK_FakVpl9NdjdT5DeT1YFpl7sx3Frube8QoreuJ82Y7R0DG7zhAsohDW2nYt'
   grant_type = "client_credentials" # OAuth 2.0 flow to use
 
   # Get an Access Token from Auth0
@@ -46,16 +46,16 @@ def queryApps(access_token,base_url):
     'Authorization': f'Bearer {access_token}',
     'Content-Type': 'application/json'
   }
+    csvHeader = ['All Applications']
     # Get all Applications using the token
     try:
         res = requests.get(f'{base_url}/api/v2/clients', headers=headers)
         print('\n')
         print("All Applications:")
         res = res.json()
-        appList = ""
+        appList = []
         for app in res:
-            appList += app['name'] + ", "
-        appList = appList[:-2]
+            appList.append(app['name'])
         
         print(appList)
         print('------------------------------------------------------------------------------------------------------------------------------------------------------')
