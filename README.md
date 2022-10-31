@@ -11,6 +11,7 @@ pip install -r requirements.txt
 
 ### API Access Token for Production
 To retrive the token, you first need to register a Machine-To-Machine application and replace these values based on your application.
+https://auth0.com/docs/get-started/auth0-overview/create-applications/machine-to-machine-apps
 ```python
   domain = '<domain>'
   audience = f'https://{domain}/api/v2/'
@@ -20,7 +21,7 @@ To retrive the token, you first need to register a Machine-To-Machine applicatio
 ```
 
 ### Methods in this script
-This Python script contains 3 functions which uses the Management API Token and calls the Management Endpoint API. To retrieve the query, enter 1-3 in user-input for the function to run.
+This Python script contains 3 functions which uses the Management API Token and calls the Management Endpoint API. To retrieve the query, enter 1-3 in user-input for specific function to run.
 
 
 #### 1. Query all Applications
