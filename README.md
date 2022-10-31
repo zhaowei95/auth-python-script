@@ -10,7 +10,7 @@ pip install -r requirements.txt
 ```
 
 ### API Access Token for Production
-To retrive the token, you first need to register a Machine-To-Machine application and replace these values based on your application.
+To retrieve the token, you first need to register a Machine-To-Machine application and replace these values based on your application.
 https://auth0.com/docs/get-started/auth0-overview/create-applications/machine-to-machine-apps
 ```python
   domain = '<domain>'
