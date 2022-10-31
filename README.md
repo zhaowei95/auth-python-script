@@ -33,6 +33,7 @@ Returns a list of Applications in your Tenant.
 #### 2. Query Actions bound by Apps
 Calls a GET on url/api/v2/actions/actions
 Returns a Dictionary of Actions key and list of Apps value.
+
 'ActionName': ['App1','App2']
 
 Actions that are not bounded to any application will have the value 'Action is not bounded to any Client'
