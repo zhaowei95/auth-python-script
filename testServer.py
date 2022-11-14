@@ -4,10 +4,10 @@ from requests.exceptions import RequestException, HTTPError, URLRequired
 def main():
 
   # Configuration Values
-  domain = 'dev-egu1zx4ujizi6zz8.us.auth0.com'
+  domain = 'xxx'
   audience = f'https://{domain}/api/v2/'
-  client_id = 'dzDQhEm045PO4JpUDFO6CDcASYFJWpSu'
-  client_secret = 'Y9jnK_FakVpl9NdjdT5DeT1YFpl7sx3Frube8QoreuJ82Y7R0DG7zhAsohDW2nYt'
+  client_id = 'xxx'
+  client_secret = 'xxx'
   grant_type = "client_credentials" # OAuth 2.0 flow to use
 
   # Get an Access Token from Auth0
